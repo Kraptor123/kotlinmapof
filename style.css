@@ -1,30 +1,39 @@
-.main {
+.kotlinmapof{
     display: flex;
-    height: 100px;
+    height: 100vh;
 }
 
-.main > * {
+.kotlinmapof > * {
     margin: auto;
+}
+
+.baslik h1 {
+    margin: 0;
 }
 
 @media (min-width: 419px) {
     .baslik {
-        color: white;
-        background-color: orchid;
+        color: black;
+        background-color: powderblue;
         border-radius: 25px;
         padding: 10px;
         box-shadow: 0 12px 9px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
-
 @media (max-width: 418px) {
     .baslik {
-        color: white;
-        background-color: orchid;
+        color: black;
+        background-color: powderblue;
         border-radius: 25px;
         padding: 10px;
         font-size: 10px;
         box-shadow: 0 12px 9px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -73,7 +82,7 @@ textarea,
 }
 
 .cevirici {
-    background-color: rebeccapurple;
+    background-color: goldenrod;
     color: white;
     padding: 15px 40px;
     border-radius: 30px;
@@ -90,15 +99,16 @@ textarea,
 
 .kopyala {
     margin-left: auto;
-    background-color: purple;
-    color: white;
+    background-color: powderblue;
+    color: black;
     padding: 12px;
-    border-radius: 45%;
+    border-radius: 13px;
     transition: transform 0.1s;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 12px;
     position: relative;
+    margin-right: 15px;
 }
 
 .kopyala:active {
