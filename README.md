@@ -1,0 +1,2 @@
+# kotlinmapof
+kotlin mapof() çevirici
