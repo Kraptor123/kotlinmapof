@@ -15,9 +15,14 @@ function oku() {
         if (line.includes(":")) {
             let [key, ...rest] = line.split(":");
             let value = rest.join(":").trim();
-            value = value.replace(/"/g, '\\"');
 
-            headers.push(`    "${key.trim()}" to "${value}"`);
+            value = value
+                .replaceAll('"', '')
+                .replace(/,$/, '');
+
+            headers.push(
+                `    "${key.trim().replaceAll('"', '')}" to "${value}"`
+            );
         }
     }
 
